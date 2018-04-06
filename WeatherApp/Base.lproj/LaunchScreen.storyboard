@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ouM-q7-yAv">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="4o8-ER-7g9">
+            <objects>
+                <viewController id="ouM-q7-yAv" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FH0-8N-q4e">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sunsetBeach" translatesAutoresizingMaskIntoConstraints="NO" id="vTT-HM-Aby">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="658"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="hOz-vd-rsL" firstAttribute="bottom" secondItem="vTT-HM-Aby" secondAttribute="bottom" constant="9" id="2Kg-Vv-WFt"/>
+                            <constraint firstItem="vTT-HM-Aby" firstAttribute="top" secondItem="FH0-8N-q4e" secondAttribute="top" id="4Qn-9z-sLF"/>
+                            <constraint firstAttribute="trailing" secondItem="vTT-HM-Aby" secondAttribute="trailing" id="beH-TX-gVF"/>
+                            <constraint firstItem="vTT-HM-Aby" firstAttribute="leading" secondItem="FH0-8N-q4e" secondAttribute="leading" id="rwU-SJ-Nu1"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="hOz-vd-rsL"/>
+                    </view>
+                    <connections>
+                        <outlet property="mainView" destination="FH0-8N-q4e" id="PWf-4x-WIl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5f6-yl-HpS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="77.599999999999994" y="380.95952023988008"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="sunsetBeach" width="368" height="552"/>
+    </resources>
+</document>
